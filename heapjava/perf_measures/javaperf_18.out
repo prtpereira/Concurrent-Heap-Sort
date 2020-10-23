@@ -1,0 +1,15 @@
+# started on Mon Jun 10 18:46:15 2019
+
+
+ Performance counter stats for 'java Sort 18 1000000':
+
+        2238872150      cache-references                                            
+          64479361      cache-misses              #    2,880 % of all cache refs    
+       43010806200      cycles                                                      
+       26915822732      instructions              #    0,63  insn per cycle         
+        4836207764      branches                                                    
+             40568      faults                                                      
+              7811      migrations                                                  
+
+      15,089133245 seconds time elapsed
+

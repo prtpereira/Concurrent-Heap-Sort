@@ -1,0 +1,15 @@
+# started on Mon Jun 10 18:49:56 2019
+
+
+ Performance counter stats for 'java Sort 32 1000000':
+
+        2543563487      cache-references                                            
+         166372670      cache-misses              #    6,541 % of all cache refs    
+       45236542531      cycles                                                      
+       26912582362      instructions              #    0,59  insn per cycle         
+        4860244224      branches                                                    
+             40599      faults                                                      
+             59645      migrations                                                  
+
+      16,942286897 seconds time elapsed
+

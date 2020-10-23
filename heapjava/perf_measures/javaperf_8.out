@@ -1,0 +1,15 @@
+# started on Mon Jun 10 18:43:42 2019
+
+
+ Performance counter stats for 'java Sort 8 1000000':
+
+        2130814865      cache-references                                            
+          74134869      cache-misses              #    3,479 % of all cache refs    
+       42475835977      cycles                                                      
+       26873891008      instructions              #    0,63  insn per cycle         
+        4851191810      branches                                                    
+             39775      faults                                                      
+             10680      migrations                                                  
+
+      14,888693411 seconds time elapsed
+

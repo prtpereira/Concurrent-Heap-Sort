@@ -1,0 +1,11 @@
+######  VERSAO JAVA  ######
+
+- javac Sort.java
+- java Sort <n_threads> <length> <seed>
+
+
+
+######  VERSAO C++  ######
+
+- make
+- ./heap <size>

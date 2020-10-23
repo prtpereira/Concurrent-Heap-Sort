@@ -1,0 +1,15 @@
+# started on Mon Jun 10 18:47:00 2019
+
+
+ Performance counter stats for 'java Sort 21 1000000':
+
+        2289979113      cache-references                                            
+          65209546      cache-misses              #    2,848 % of all cache refs    
+       43191021197      cycles                                                      
+       26969122787      instructions              #    0,62  insn per cycle         
+        4841540378      branches                                                    
+             39318      faults                                                      
+              9675      migrations                                                  
+
+      15,008571098 seconds time elapsed
+

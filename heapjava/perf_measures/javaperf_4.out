@@ -1,0 +1,15 @@
+# started on Mon Jun 10 18:42:43 2019
+
+
+ Performance counter stats for 'java Sort 4 1000000':
+
+        1996076298      cache-references                                            
+          63223541      cache-misses              #    3,167 % of all cache refs    
+       41827075852      cycles                                                      
+       26661152904      instructions              #    0,64  insn per cycle         
+        4797302471      branches                                                    
+             39422      faults                                                      
+              8962      migrations                                                  
+
+      14,447863356 seconds time elapsed
+

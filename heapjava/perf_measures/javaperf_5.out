@@ -1,0 +1,15 @@
+# started on Mon Jun 10 18:42:58 2019
+
+
+ Performance counter stats for 'java Sort 5 1000000':
+
+        2037924912      cache-references                                            
+          61299691      cache-misses              #    3,008 % of all cache refs    
+       41928241669      cycles                                                      
+       26735936707      instructions              #    0,64  insn per cycle         
+        4811332809      branches                                                    
+             39553      faults                                                      
+              6226      migrations                                                  
+
+      14,328047953 seconds time elapsed
+

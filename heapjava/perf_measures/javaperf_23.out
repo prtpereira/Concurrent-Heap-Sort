@@ -1,0 +1,15 @@
+# started on Mon Jun 10 18:47:30 2019
+
+
+ Performance counter stats for 'java Sort 23 1000000':
+
+        2329272762      cache-references                                            
+          66964506      cache-misses              #    2,875 % of all cache refs    
+       43910995136      cycles                                                      
+       27347651677      instructions              #    0,62  insn per cycle         
+        4896004538      branches                                                    
+             39168      faults                                                      
+              9271      migrations                                                  
+
+      14,988497799 seconds time elapsed
+

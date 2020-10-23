@@ -1,0 +1,42 @@
+#!/bin/sh
+
+#PBS -N log_scalability
+#PBS -l walltime=2:00:00
+#PBS -q mei
+#PBS -l nodes=1:ppn=32:r641
+
+cd $PBS_O_WORKDIR
+
+PATH=/share/apps/java/jdk1.8.0_20/bin:$PATH
+export PATH
+
+function kbest(){
+    for i in `seq 8`
+    do
+        java -cp . $PROG $CORES $N
+    done | sort -n | head -n 3 | awk '{time+=$1} END {printf("%lf", time/NR)}'
+}
+
+PROG=Sort
+
+PLOT=32
+DATE=$(date "+%d_%m_%y-%H_%M_%S")
+FILE="s641-1x32.$DATE"
+
+N=1000000
+
+echo "" > $FILE
+printf 'N:%d\n' $N >> $FILE
+
+CORES=1
+SEQ=`kbest`
+printf 'seq: %lf\n' $SEQ >> $FILE
+
+printf 'cores,time,speedup\n' >> $FILE
+for CORES in `seq $PLOT`
+do
+    TIME=`kbest`
+    SPEEDUP=`echo "$SEQ/$TIME" | bc -l`
+    printf '%d,%lf,%lf\n' $CORES $TIME $SPEEDUP >> $FILE
+done 
+
